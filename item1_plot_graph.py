@@ -29,11 +29,25 @@ if __name__ == "__main__":
 
     fig, axs = plt.subplots(2, 2, figsize=(10, 8))
 
-    axs[0, 0].plot(x, y1, 'r-')
+    axs[0, 0].plot(x, y1, 'r-', label="x^2")
+    axs[0, 0].set_title("f(x) = x^2")
+    axs[0, 0].set_xlabel("x")
+    axs[0, 0].set_ylabel("y = x^2")
+    axs[0, 0].legend()
 
-    axs[0, 1].plot(x, y2, 'g-')
+    axs[0, 1].plot(x, y2, 'g-', label="x*sin(2*x)")
+    axs[0, 1].set_title("f(x) = x * sin(2*x)")
+    axs[0, 1].set_xlabel("x")
+    axs[0, 1].set_ylabel("y = arctan(x)")
+    axs[0, 1].legend()
 
-    axs[1, 0].plot(x, y3, 'b-')
+
+    axs[1, 0].plot(x, y3, 'b-', label="arctan(x)")
+    axs[1, 0].set_title("f(x) = arctg(x)")
+    axs[1, 0].set_xlabel("x")
+    axs[1, 0].set_ylabel("y = arctan(x)")
+    axs[1, 0].legend()
+
 
     axs[1, 1].axis('off')
 
