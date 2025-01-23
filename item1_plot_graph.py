@@ -42,7 +42,7 @@ if __name__ == "__main__":
     axs[0, 1].legend()
 
 
-    axs[1, 0].plot(x, y3, 'b-', label="arctan(x)")
+    axs[1, 0].plot(x, y3, 'c-', label="arctan(x)")
     axs[1, 0].set_title("f(x) = arctg(x)")
     axs[1, 0].set_xlabel("x")
     axs[1, 0].set_ylabel("y = arctan(x)")
